@@ -1,10 +1,10 @@
 package level2.AllExcercices.model;
+import level1.ex1.model.Book;
+import level1.ex1.model.Library;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 import static org.assertj.core.api.Assertions.*;
 
@@ -33,9 +33,9 @@ public class AssertJTest {
 
     @Test
     void givenTwoDifferentObjectsWithSameContent_whenCompared_thenTheyAreNotSame() {
-        String x = new String("hello");
-        String y = new String("hello");
-        assertThat(x).isNotSameAs(y);
+        String string1 = new String("Tony Hawk");
+        Skater skater2 = new Skater("Tony Hawk");
+        assertThat(string1).isNotSameAs(skater2);
     }
 
     @Test
@@ -46,7 +46,7 @@ public class AssertJTest {
     }
 
     @Test
-    void givenOrderedListOfFruits_whenChecked_thenContainsInCorrectOrder() {
+    void givenOrderedListOfSkaters_whenChecked_thenContainsInCorrectOrder() {
         Skater punk = new Skater("Dustin Dolin");
         Skater flat = new Skater("Leticia Buffoni");
         Skater bowl = new Skater ("Grant Taylor");
@@ -57,7 +57,7 @@ public class AssertJTest {
     }
 
     @Test
-    void givenListOfFruits_whenChecked_thenContainsInAnyOrder() {
+    void givenListOfSkaters_whenChecked_thenContainsInAnyOrder() {
         Skater punk = new Skater("Dustin Dolin");
         Skater flat = new Skater("Leticia Buffoni");
         Skater bowl = new Skater ("Grant Taylor");

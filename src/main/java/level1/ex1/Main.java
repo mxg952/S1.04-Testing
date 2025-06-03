@@ -3,8 +3,6 @@ package level1.ex1;
 import level1.ex1.model.Book;
 import level1.ex1.model.Library;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
@@ -23,7 +21,7 @@ public class Main {
         System.out.println("Position" + position);
 
 
-        Book book = new Book("Alicia en el pais de les maravelles");
+        Book book = new Book("Alicia en el país de les maravelles");
         System.out.println("\nAdding a book by position: " + position);
         library.addBookWithPosition(position , "Alicia en el pais de les maravelles");
         library.showAllBooks();
